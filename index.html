@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sachet – Scam Message Inspector</title>
+<meta name="description" content="Paste an SMS, WhatsApp message or link, or upload a screenshot. Sachet explains why it looks like a scam. Private: everything runs on your device.">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0B2239">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;800&family=Noto+Sans+Bengali:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="plus.css">
+<meta property="og:title" content="Sachet – Scam Message Inspector">
+<meta property="og:description" content="Paste a suspicious SMS, WhatsApp message or link. Get a risk score, the exact red flags, and what to do next. Private, on-device, English / हिन्दी / অসমীয়া.">
+</head>
+<body>
+
+<header class="nav">
+  <div class="in">
+    <a class="brand" href="#top" aria-label="Sachet home">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+      <span>Sachet</span><small>सचेत</small>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#how" data-t="how">How it works</a>
+      <a href="#scams" data-t="scams">Scam types</a>
+      <a href="#quiz-sec" data-t="quiz">Quiz</a>
+      <a href="#report" data-t="report">Report fraud</a>
+    </nav>
+    <div class="tools">
+      <div class="seg" role="group" aria-label="Language"><button data-lang="en" aria-pressed="true">EN</button><button data-lang="hi" aria-pressed="false" lang="hi">हिं</button><button data-lang="as" aria-pressed="false" lang="as">অসমীয়া</button></div>
+      <button class="btn sm" id="inst" hidden>Install app</button>
+      <button class="btn sm" id="big" aria-pressed="false" title="Larger text">A+</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="in hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow" data-t="eyebrow">Scam message inspector</span>
+      <h1 data-t="h1" data-html>Is that message a scam? <em>Check before you trust.</em></h1>
+      <p class="lead" data-t="lead">Paste an SMS, WhatsApp message or link, or upload a screenshot. Sachet highlights every suspicious phrase and link, explains why, and tells you what to do next.</p>
+      <ul class="trust">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg><span data-t="tr1">Runs on your device. Nothing is uploaded</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4.5 4.5L19 7"/></svg><span data-t="tr2">No sign-up, free to use</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a15 15 0 0120 0M5 12.5a10 10 0 0114 0M8.5 16a5 5 0 017 0"/><circle cx="12" cy="19" r="1"/></svg><span data-t="tr3">Installable, works offline</span></li>
+      </ul>
+    </div>
+
+    <div class="tray card" id="tray">
+      <div class="tray-h">
+        <label for="t" data-t="label">Message to inspect</label>
+        <span class="hint" data-t="hint">Paste, drop a screenshot, or press Ctrl + V</span>
+      </div>
+      <input id="sn" data-t-ph="snPh" placeholder="Sender (optional), e.g. VM-SBIINB or +91 98765 43210" aria-label="Sender of the message" autocomplete="off">
+      <textarea id="t" data-t-ph="tPh" placeholder="Paste the suspicious message here…&#10;e.g. Your account will be blocked today. Update KYC: http://…"></textarea>
+      <div class="row">
+        <button class="btn primary" id="go">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span data-t="go">Inspect message</span>
+        </button>
+        <button class="btn" id="upb">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="M21 16l-5-5-8 8"/></svg><span data-t="upb">Upload screenshot</span>
+        </button>
+        <button class="btn quiet" id="clr" data-t="clr">Clear</button>
+        <button class="btn quiet sndb" id="snd" aria-pressed="true">Alert sound: On</button>
+      </div>
+      <input id="img" type="file" accept="image/*" hidden>
+      <p class="ocrs" id="ocrs" aria-live="polite" data-t="ocr">Screenshots are read on your device using OCR.</p>
+      <div class="try">
+        <span data-t="try">Try a sample</span>
+        <button class="chip-btn" data-s="0">Bank KYC</button>
+        <button class="chip-btn" data-s="1">Courier fee</button>
+        <button class="chip-btn" data-s="2">Lottery win</button>
+        <button class="chip-btn" data-s="3">Genuine OTP</button>
+        <button class="chip-btn" data-s="4">Loan offer</button>
+        <button class="chip-btn" data-s="5">Hinglish scam</button>
+        <button class="chip-btn" data-s="6" lang="hi">हिंदी स्कैम</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats" aria-label="At a glance">
+  <div class="in">
+    <div><b>15</b><span data-t="st1">scam pattern groups</span></div>
+    <div><b>10+</b><span data-t="st2">link safety checks</span></div>
+    <div><b>0</b><span data-t="st3">bytes of your data uploaded</span></div>
+    <div><b>1930</b><span data-t="st4">national cyber crime helpline</span></div>
+  </div>
+</section>
+
+<section class="results-sec">
+  <div class="in narrow">
+    <div id="res" aria-live="polite"></div>
+    <div id="hist"></div>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="in">
+    <h2 class="sh">How Sachet works</h2>
+    <p class="sub">Three steps, a few seconds, no account.</p>
+    <ol class="steps">
+      <li><span class="n">1</span><h3>Add the message</h3><p>Paste the text, drop a screenshot of the chat, or type the link. Add the sender if you know it.</p></li>
+      <li><span class="n">2</span><h3>Sachet inspects it</h3><p>15 scam-pattern groups and a set of link checks look for OTP requests, fake urgency, look-alike domains, fee demands and more.</p></li>
+      <li><span class="n">3</span><h3>Understand and act</h3><p>You get a risk score, the exact words that triggered it, who really owns each link, and what to do next.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec alt" id="scams">
+  <div class="in">
+    <h2 class="sh">Scams to recognise</h2>
+    <p class="sub">The most common frauds reaching Indian phones today.</p>
+    <div class="grid">
+      <article class="card sc"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10l9-6 9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/></svg></div><h3>Bank or KYC update</h3><p>“Your account will be blocked” plus a link. The link opens a copy of the bank’s site that steals your login and OTP. Banks do not ask for KYC through SMS links.</p></article>
+      <article class="card sc"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4-9-4zM3 7v10l9 4 9-4V7M12 11v10"/></svg></div><h3>Delivery fee</h3><p>A parcel is “held” and you must pay a small fee. The payment page captures your card or UPI details. Track parcels only in the courier’s own app.</p></article>
+      <article class="card sc"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M12 8v5M12 16v.5"/></svg></div><h3>Police, CBI or “digital arrest”</h3><p>A caller says you are in a case and pushes you to pay or stay on video. No agency arrests people over WhatsApp and takes money.</p></article>
+      <article class="card sc"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 13h18M12 8S10 3 7.5 4.5 8 8 12 8zm0 0s2-5 4.5-3.5S16 8 12 8z"/></svg></div><h3>Prizes, refunds and job tasks</h3><p>You “won” a draw, are owed a refund, or can earn per day by liking videos. Anything that asks you to pay first is a scam.</p></article>
+      <article class="card sc"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 9v.01M18 15v.01"/></svg></div><h3>Instant loan offers</h3><p>“Pre-approved” or “final disbursal stage” messages you never applied for. They end with a processing fee and stolen identity documents.</p></article>
+      <article class="card sc"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Fake apps and remote access</h3><p>Links that download an .apk, or callers who ask you to install AnyDesk or TeamViewer. These let a stranger read your OTPs and control your phone.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="quiz-sec">
+  <div class="in narrow">
+    <h2 class="sh">Test yourself</h2>
+    <p class="sub">Five real-looking messages. Can you tell which are scams?</p>
+    <div id="quiz"></div>
+  </div>
+</section>
+
+<section class="sec" id="report">
+  <div class="in">
+    <div class="help">
+      <div>
+        <span class="eyebrow light" data-t="hEye">Already clicked, paid or shared an OTP?</span>
+        <h2 data-t="hH">Act within the first hour.</h2>
+        <p data-t="hP">Call your bank immediately to block the card or account. Then report the fraud so the money can be frozen.</p>
+        <div class="links">
+          <a class="btn light" href="https://cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a>
+          <a class="btn light" href="https://sancharsaathi.gov.in" target="_blank" rel="noopener">sancharsaathi.gov.in</a>
+        </div>
+      </div>
+      <a class="call" href="tel:1930" aria-label="Call the cyber crime helpline 1930">
+        <span data-t="callL">Cyber crime helpline</span><b>1930</b><small data-t="callS">Tap to call · 24×7</small>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="in">
+    <p><b>Sachet</b> checks messages against known scam patterns. It cannot guarantee a message is safe or unsafe. When in doubt, contact the company through its official app, website or the number on your card.</p>
+    <p class="muted">Built for PromptWars × Code1 Innovators · Cybersecurity.</p>
+  </div>
+</footer>
+
+<script src="engine.js"></script>
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+<script src="plus.js"></script>
+</body>
+</html>

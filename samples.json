@@ -1,0 +1,281 @@
+[
+ {
+  "text": "Dear customer, your SBI account will be blocked today. Update your KYC immediately: http://sbi-kyc-update.xyz/login and share the OTP you receive.",
+  "expect": "scam",
+  "sender": "+91 98765 43210",
+  "note": "Bank KYC"
+ },
+ {
+  "text": "Your parcel is held at customs due to an incomplete address. Pay a redelivery fee of Rs 49 within 12 hours: bit.ly/3xYpost1",
+  "expect": "scam",
+  "sender": "",
+  "note": "Courier fee"
+ },
+ {
+  "text": "Congratulations! You have won a lucky draw prize of Rs 25,00,000. Claim your reward now, pay a small processing fee of Rs 999. Do not tell anyone.",
+  "expect": "scam",
+  "sender": "",
+  "note": "Lottery"
+ },
+ {
+  "text": "Hello Customer,\nYour credit application of INR 40,000\nhas now reached the final disbursal stage.\nTap to continue ahead.\nRef ID-80025288",
+  "expect": "scam",
+  "sender": "",
+  "note": "Loan"
+ },
+ {
+  "text": "This is CBI. A case is registered against your Aadhaar for money laundering. Stay on video call or you will face arrest. Do not tell anyone.",
+  "expect": "scam",
+  "sender": "",
+  "note": "Digital arrest"
+ },
+ {
+  "text": "Earn Rs 5000 per day working from home. Just like and subscribe to videos. Join our Telegram group now.",
+  "expect": "scam",
+  "sender": "",
+  "note": "Fake job"
+ },
+ {
+  "text": "Your electricity connection will be disconnected tonight. Install the app http://mseb-bill.top/pay.apk and pay Rs 10 immediately.",
+  "expect": "scam",
+  "sender": "",
+  "note": "Electricity APK"
+ },
+ {
+  "text": "Income tax refund of Rs 15,490 approved. Verify now: http://incometax-refund.info/claim",
+  "expect": "scam",
+  "sender": "",
+  "note": "Tax refund"
+ },
+ {
+  "text": "Your HDFC card is blocked. Click here to update PAN: http://hdfc-secure-login.top",
+  "expect": "scam",
+  "sender": "",
+  "note": "Card block"
+ },
+ {
+  "text": "Dear user, install AnyDesk and share the 9 digit code so our agent can fix your refund.",
+  "expect": "scam",
+  "sender": "",
+  "note": "Remote access"
+ },
+ {
+  "text": "URGENT: Your SIM will be deactivated within 2 hours. Complete KYC now at http://airtel-kyc.xyz",
+  "expect": "scam",
+  "sender": "",
+  "note": "SIM KYC"
+ },
+ {
+  "text": "You have received a UPI collect request of Rs 4,999. Enter your UPI PIN to receive the money.",
+  "expect": "scam",
+  "sender": "",
+  "note": "UPI collect"
+ },
+ {
+  "text": "Your Amazon account is suspended. Verify now: http://amazon-verify-account.click/login",
+  "expect": "scam",
+  "sender": "",
+  "note": "Brand phishing"
+ },
+ {
+  "text": "Pre-approved instant loan of Rs 2,00,000. No documents. Pay Rs 1,500 processing fee to get disbursal today.",
+  "expect": "scam",
+  "sender": "",
+  "note": "Instant loan"
+ },
+ {
+  "text": "Hi user, your parcel could not be delivered. Click here to reschedule and pay Rs 25: http://indiapost-track.top/pay",
+  "expect": "scam",
+  "sender": "",
+  "note": "India Post"
+ },
+ {
+  "text": "Scan the QR code to receive your cashback of Rs 800. Pay Rs 1 to verify.",
+  "expect": "scam",
+  "sender": "",
+  "note": "QR"
+ },
+ {
+  "text": "Priya grahak, aapka SBI khata aaj raat band ho jayega. Turant KYC update karein aur OTP bhejo: http://sbi-kyc-verify.top/login",
+  "expect": "scam",
+  "sender": "",
+  "note": "Hinglish KYC"
+ },
+ {
+  "text": "Aapne 25 lakh ka lucky draw jeeta hai! Badhai ho. Inaam paane ke liye Rs 999 processing fee jama karein. Kisi ko mat batana.",
+  "expect": "scam",
+  "sender": "",
+  "note": "Hinglish lottery"
+ },
+ {
+  "text": "Aapka parcel customs mein atka hai. 24 ghante mein Rs 49 pay karein warna wapas bhej diya jayega: bit.ly/4abcPost",
+  "expect": "scam",
+  "sender": "",
+  "note": "Hinglish parcel"
+ },
+ {
+  "text": "Ghar baithe rozana Rs 3000 kamao. Telegram group join karo, abhi click karein.",
+  "expect": "scam",
+  "sender": "",
+  "note": "Hinglish job"
+ },
+ {
+  "text": "Aapka loan pass ho gaya hai. Instant loan ke liye link par click karein aur aadhaar bhejein: http://quick-loan-now.top",
+  "expect": "scam",
+  "sender": "",
+  "note": "Hinglish loan"
+ },
+ {
+  "text": "Aapka bank account band ho jayega. Abhi OTP bata dijiye varna giraftar ho sakte hain.",
+  "expect": "scam",
+  "sender": "",
+  "note": "Hinglish threat"
+ },
+ {
+  "text": "बधाई हो! आपने ₹25,00,000 की लॉटरी जीती है। इनाम पाने के लिए तुरंत ₹999 प्रोसेसिंग फीस जमा करें। किसी को न बताएं।",
+  "expect": "scam",
+  "sender": "",
+  "note": "Hindi lottery"
+ },
+ {
+  "text": "आपका SBI खाता आज बंद हो जाएगा। तुरंत केवाईसी अपडेट करें और OTP भेजें: http://sbi-kyc.top",
+  "expect": "scam",
+  "sender": "",
+  "note": "Hindi KYC"
+ },
+ {
+  "text": "प्रिय ग्राहक, आपका पार्सल रुका है। डिलीवरी शुल्क जमा करें: bit.ly/3parcel",
+  "expect": "scam",
+  "sender": "",
+  "note": "Hindi parcel"
+ },
+ {
+  "text": "Check this: http://192.168.4.21/login.php",
+  "expect": "scam",
+  "sender": "",
+  "note": "IP link"
+ },
+ {
+  "text": "Download now http://free-recharge-app.online/offer.apk",
+  "expect": "scam",
+  "sender": "",
+  "note": "APK link"
+ },
+ {
+  "text": "482913 is your OTP for login to HDFC Bank NetBanking. Do not share it with anyone. Valid for 10 minutes.",
+  "expect": "genuine",
+  "sender": "VM-HDFCBK",
+  "note": "OTP"
+ },
+ {
+  "text": "Rs 2,500 debited from A/c XX1234 on 21-Nov. Not you? Call the number on the back of your card. -ICICI Bank",
+  "expect": "genuine",
+  "sender": "VM-ICICIB",
+  "note": "Debit alert"
+ },
+ {
+  "text": "Your Amazon order #402-1234567 has been shipped and will arrive tomorrow. Track it in the Amazon app.",
+  "expect": "genuine",
+  "sender": "",
+  "note": "Order shipped"
+ },
+ {
+  "text": "Your OTP for Swiggy login is 7261. Never share it with anyone.",
+  "expect": "genuine",
+  "sender": "",
+  "note": "OTP 2"
+ },
+ {
+  "text": "Hi Rahul, are we still meeting at 6 pm near the station? Let me know.",
+  "expect": "genuine",
+  "sender": "",
+  "note": "Friend"
+ },
+ {
+  "text": "Your Airtel recharge of Rs 299 is successful. Validity till 20 Dec. Thank you for choosing Airtel.",
+  "expect": "genuine",
+  "sender": "VM-AIRTEL",
+  "note": "Recharge"
+ },
+ {
+  "text": "Reminder: Your appointment with Dr. Sharma is tomorrow at 10:30 AM. Reply C to confirm.",
+  "expect": "genuine",
+  "sender": "",
+  "note": "Appointment"
+ },
+ {
+  "text": "Your electricity bill for October is Rs 842. Due date is 28 Nov. Pay via the official app or website.",
+  "expect": "genuine",
+  "sender": "",
+  "note": "Bill"
+ },
+ {
+  "text": "Mom: Please bring milk and bread on your way back.",
+  "expect": "genuine",
+  "sender": "",
+  "note": "Family"
+ },
+ {
+  "text": "Your IRCTC ticket PNR 4521896732 is confirmed. Train 12345 departs 21:40 from Guwahati.",
+  "expect": "genuine",
+  "sender": "",
+  "note": "Train"
+ },
+ {
+  "text": "OTP kisi ko na batayein. Aapka OTP 5521 hai, 10 minute tak valid.",
+  "expect": "genuine",
+  "sender": "",
+  "note": "Hinglish OTP"
+ },
+ {
+  "text": "आपका OTP 8842 है। इसे किसी को न बताएं।",
+  "expect": "genuine",
+  "sender": "",
+  "note": "Hindi OTP"
+ },
+ {
+  "text": "Meeting moved to 3 pm in Room 204. Please bring the printed report.",
+  "expect": "genuine",
+  "sender": "",
+  "note": "Work"
+ },
+ {
+  "text": "Your Zomato order is out for delivery. Arriving in 15 mins.",
+  "expect": "genuine",
+  "sender": "",
+  "note": "Food"
+ },
+ {
+  "text": "Mom I changed my number. Save this one. Can you send Rs 8,000 to my friend now? I will repay tonight.",
+  "expect": "scam",
+  "sender": "",
+  "note": "Family impersonation"
+ },
+ {
+  "text": "Flipkart: your refund of Rs 1,200 has been initiated to your original payment method.",
+  "expect": "genuine",
+  "sender": "",
+  "note": "Refund notice"
+ },
+ {
+  "text": "Sir, your son has met with an accident and is admitted at City Hospital. Please send the amount to this account immediately.",
+  "expect": "scam",
+  "sender": "",
+  "note": "Emergency scam",
+  "known": true
+ },
+ {
+  "text": "Your KYC is complete. Thank you for updating your details with us.",
+  "expect": "genuine",
+  "sender": "",
+  "note": "KYC done notice",
+  "known": true
+ },
+ {
+  "text": "hey bro, check this out, you will love it https://sites.google.com/view/abc123",
+  "expect": "scam",
+  "sender": "",
+  "note": "Link on trusted host",
+  "known": true
+ }
+]
